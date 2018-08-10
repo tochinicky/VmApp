@@ -13446,11 +13446,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\Mvc\\Mvc\\Ale.csproj",
+      "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\Mvc\\VmApp\\Mvc\\Ale.csproj",
       "projectName": "Ale",
-      "projectPath": "C:\\Users\\ASUS\\source\\repos\\Mvc\\Mvc\\Ale.csproj",
+      "projectPath": "C:\\Users\\ASUS\\Desktop\\Mvc\\VmApp\\Mvc\\Ale.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASUS\\source\\repos\\Mvc\\Mvc\\obj\\",
+      "outputPath": "C:\\Users\\ASUS\\Desktop\\Mvc\\VmApp\\Mvc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

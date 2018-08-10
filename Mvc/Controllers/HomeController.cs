@@ -86,7 +86,7 @@ namespace Mvc.Controllers
                 Host = "smtp.office365.com", // set your SMTP server name here
                 Port = 25, // Port 
                 EnableSsl = true,
-                Credentials = new NetworkCredential("onyeamah@lotusbetaanalytics.com", "Fcb246810")
+                Credentials = new NetworkCredential("onyeamah@lotusbetaanalytics.com", "")
             };
             // ------- Getting Data from Database Using EntityFrameworkCore -------
 
