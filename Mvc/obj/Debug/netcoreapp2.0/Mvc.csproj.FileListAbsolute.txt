@@ -1,0 +1,11 @@
+C:\Users\ASUS\source\repos\Mvc\Mvc\obj\Debug\netcoreapp2.0\Mvc.csprojAssemblyReference.cache
+C:\Users\ASUS\source\repos\Mvc\Mvc\obj\Debug\netcoreapp2.0\Mvc.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\Mvc\Mvc\obj\Debug\netcoreapp2.0\Mvc.AssemblyInfoInputs.cache
+C:\Users\ASUS\source\repos\Mvc\Mvc\obj\Debug\netcoreapp2.0\Mvc.AssemblyInfo.cs
+C:\Users\ASUS\source\repos\Mvc\Mvc\bin\Debug\netcoreapp2.0\Mvc.deps.json
+C:\Users\ASUS\source\repos\Mvc\Mvc\bin\Debug\netcoreapp2.0\Mvc.runtimeconfig.json
+C:\Users\ASUS\source\repos\Mvc\Mvc\bin\Debug\netcoreapp2.0\Mvc.runtimeconfig.dev.json
+C:\Users\ASUS\source\repos\Mvc\Mvc\bin\Debug\netcoreapp2.0\Mvc.dll
+C:\Users\ASUS\source\repos\Mvc\Mvc\bin\Debug\netcoreapp2.0\Mvc.pdb
+C:\Users\ASUS\source\repos\Mvc\Mvc\obj\Debug\netcoreapp2.0\Mvc.dll
+C:\Users\ASUS\source\repos\Mvc\Mvc\obj\Debug\netcoreapp2.0\Mvc.pdb

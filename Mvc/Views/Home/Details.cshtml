@@ -1,0 +1,99 @@
+﻿@model Mvc.Models.User
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+
+<div>
+    <h4>User</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PhoneNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Purpose)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Purpose)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Name_of_company)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name_of_company)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Whom_to_see)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Whom_to_see)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Company_name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Company_name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Name_of_event)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name_of_event)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.From_where)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.From_where)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.To_whom)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.To_whom)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Sign_in)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Sign_in)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.UserId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
+</body>
+</html>

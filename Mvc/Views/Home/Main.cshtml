@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Main";
+
+}
+<div class="container">
+        <div class="col-md-12 text-center">
+        
+            <div class="checkin-checkout">
+                <div class="col-md-6 col-sm-6">
+                    <button type="button" class="btn btn-default btn-lg" id="checkin"></button>
+                    <a asp-controller="Home" asp-action="New"><img src="~/img/icons/user.png" class="img-responsive"></a>
+                    <h2>Check In</h2>
+                    
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <button type="button" class="btn btn-default btn-lg" id="checkout"></button>
+                    <a><img src="~/img/icons/media.png" class="img-responsive"></a>
+                    <h2>Check Out</h2>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,149 @@
+﻿@model Mvc.Models.BigView
+
+@{
+   
+}
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+
+    @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />*@
+    @*<link href="~/css/style.css" media="screen" rel="stylesheet" />*@
+    @*<link rel="stylesheet" href="~/css/site.css" />*@
+
+</head>
+<body>
+    <div class="container">
+        <div class="col-md-4 form-center">
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="User.Name" class="control-label"></label>
+                    <input asp-for="User.Name" class="form-control" />
+                    <span asp-validation-for="User.Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="User.Email" class="control-label"></label>
+                    <input asp-for="User.Email" class="form-control" />
+                    <span asp-validation-for="User.Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="User.PhoneNumber" class="control-label"></label>
+                    <input asp-for="User.PhoneNumber" class="form-control" />
+                    <span asp-validation-for="User.PhoneNumber" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="User.Address" class="control-label"></label>
+                    <input asp-for="User.Address" class="form-control" />
+                    <span asp-validation-for="User.Address" class="text-danger"></span>
+                </div>
+
+                <div>
+                    <div class="input-group mb-3" id="purpose">
+                        <div class="input-group-prepend">
+                            <label asp-for="User.Purpose" class="input-group-text" for="inputGroupSelect01"></label>
+                        </div>
+
+
+                        <div class="input-group mb-3" id="purpose">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01"></label>
+                            </div>
+                            <select class="form-control" name="User.Purpose" id="inputGroupSelect01">
+                                <option value="meeting">Meeting</option>
+                                <option value="event">Event</option>
+                                <option value="pickup">Pickup/Delivery</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="form-group show1">
+                    <label asp-for="User.Name_of_company" class="control-label"></label>
+                    <input asp-for="User.Name_of_company" class="form-control" />
+                    <span asp-validation-for="User.Name_of_company" class="text-danger"></span>
+                </div>
+                <div class="form-group show1">
+                    <label asp-for="User.Whom_to_see" class="control-label"></label>
+
+                    <select asp-items="@(new SelectList(@ViewBag.ListofCountry,"EmpId", "FullName"))" class="form-control"></select>
+                    <span asp-validation-for="User.Whom_to_see" class="text-danger"></span>
+                </div>
+
+
+
+
+                <input type="submit" class="btn btn-default checkin-submit show1" id="checked" value="Check In" />
+
+                <div class="form-group show2">
+                    <label asp-for="User.Company_name" class="control-label"></label>
+                    <input asp-for="User.Company_name" class="form-control" />
+                    <span asp-validation-for="User.Company_name" class="text-danger"></span>
+                </div>
+                <div class="form-group show2">
+                    <label asp-for="User.Name_of_event" class="control-label"></label>
+                    <input asp-for="User.Name_of_event" class="form-control" />
+                    <span asp-validation-for="User.Name_of_event" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="btn btn-default checkin-submit show2" id="checked">Check In</button>
+
+
+                <div class="form-group show3">
+                    <label asp-for="User.From_where" class="control-label"></label>
+                    <input asp-for="User.From_where" class="form-control" />
+                    <span asp-validation-for="User.From_where" class="text-danger"></span>
+                </div>
+                <div class="form-group show3">
+                    <label asp-for="User.To_whom" class="control-label"></label>
+                    <select asp-items="@(new SelectList(@ViewBag.ListofCountry,"EmpId", "FullName"))" class="form-control"></select>
+                </div>
+
+                <button type="submit" class="btn btn-default checkin-submit show3" id="checked">Check In</button>
+            </form>
+
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="~/javascript/jquery-3.3.1.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+
+
+    <script type="text/javascript">
+        $('select[name="User.Purpose"]').on('change', function () {
+            if ($(this).val() == "event") {
+                $('.show1').hide();
+                $('.show3').hide();
+                $('.show2').show();
+            } else if ($(this).val() == "pickup") {
+                $('.show1').hide();
+                $('.show2').hide();
+                $('.show3').show();
+
+            } else {
+                $('.show1').show();
+                $('.show2').hide();
+                $('.show3').hide();
+            }
+        });
+
+    $("#SearchString").autocomplete({
+        source: '@Url.Action("SearchString", "reg")'
+    });
+
+    </script>
+
+}
+

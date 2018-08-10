@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewData["Title"] = "New";
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <div class="container">
+        <!--first timer and returning(status) page-->
+        <div class="col-md-12 text-center">
+            <div class="checkin-checkout">
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-default btn-lg" id="firsttimer"></button>
+                    <a asp-controller="HOme" asp-action="Create"><img src="~/img/icons/finger.png" class="img-responsive"></a>
+                    <h2>First Timer</h2>
+                </div>
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-default btn-lg" id="returning"></button>
+                    <a asp-controller="Home" asp-action="Existing" ><img src="~/img/icons/handshake.png" class="img-responsive"></a>
+                    <h2>Returning</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+		    document.getElementById("firsttimer").onclick = function () {
+        location.href = "/Create";
+    };
+    		document.getElementById("returning").onclick = function () {
+        location.href = "/Returnee/Return";
+    };
+    </script>
+</body>
+</html>

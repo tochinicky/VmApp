@@ -1,0 +1,11 @@
+C:\Users\ASUS\source\repos\Mvc\Mvc\bin\Debug\netcoreapp2.0\Ale.deps.json
+C:\Users\ASUS\source\repos\Mvc\Mvc\bin\Debug\netcoreapp2.0\Ale.runtimeconfig.json
+C:\Users\ASUS\source\repos\Mvc\Mvc\bin\Debug\netcoreapp2.0\Ale.runtimeconfig.dev.json
+C:\Users\ASUS\source\repos\Mvc\Mvc\bin\Debug\netcoreapp2.0\Ale.dll
+C:\Users\ASUS\source\repos\Mvc\Mvc\bin\Debug\netcoreapp2.0\Ale.pdb
+C:\Users\ASUS\source\repos\Mvc\Mvc\obj\Debug\netcoreapp2.0\Ale.csprojAssemblyReference.cache
+C:\Users\ASUS\source\repos\Mvc\Mvc\obj\Debug\netcoreapp2.0\Ale.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\Mvc\Mvc\obj\Debug\netcoreapp2.0\Ale.AssemblyInfoInputs.cache
+C:\Users\ASUS\source\repos\Mvc\Mvc\obj\Debug\netcoreapp2.0\Ale.AssemblyInfo.cs
+C:\Users\ASUS\source\repos\Mvc\Mvc\obj\Debug\netcoreapp2.0\Ale.dll
+C:\Users\ASUS\source\repos\Mvc\Mvc\obj\Debug\netcoreapp2.0\Ale.pdb
